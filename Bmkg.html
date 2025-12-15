@@ -1,9 +1,39 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <title>Maritim Cerdas - Portal Edukasi Interaktif BMKG</title>
+    
+    <!-- Meta Tags untuk SEO dan Social Sharing -->
+    <meta name="description" content="Portal edukasi interaktif tentang Meteorologi, Klimatologi, dan Geofisika. Belajar tentang cuaca, iklim, dan gempa bumi dengan Cera - asisten virtual BMKG.">
+    <meta name="keywords" content="BMKG, meteorologi, klimatologi, geofisika, cuaca, iklim, pendidikan">
+    <meta name="author" content="Stasiun Meteorologi Merak - BMKG">
+    <meta name="theme-color" content="#1565c0">
+    
+    <!-- Open Graph Tags untuk Social Media Preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Maritim Cerdas - Portal Edukasi BMKG">
+    <meta property="og:description" content="Pelajari meteorologi, klimatologi, dan geofisika dengan portal interaktif yang menyenangkan. Tanya jawab dengan Cera, ikuti quiz, dan akses e-flipbook.">
+    <meta property="og:image" content="https://maritim-cerdas.vercel.app/BMKG.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="1200">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://maritim-cerdas.vercel.app">
+    <meta property="og:site_name" content="Maritim Cerdas">
+    <meta property="og:locale" content="id_ID">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maritim Cerdas - Portal Edukasi BMKG">
+    <meta name="twitter:description" content="Pelajari meteorologi, klimatologi, dan geofisika secara interaktif dengan Cera dan konten edukasi BMKG.">
+    <meta name="twitter:image" content="https://maritim-cerdas.vercel.app/BMKG.png">
+    <meta name="twitter:site" content="@BMKGOfficial">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="BMKG.png">
+    <link rel="apple-touch-icon" href="BMKG.png">
+    
     <link rel="stylesheet" href="styles.css">
     <style>
         /* ============ MOBILE-FIRST OPTIMIZATION ============ */
@@ -285,10 +315,11 @@
             align-items: center;
             justify-content: center;
             background: white;
-            border-radius: 15px;
-            padding: 10px;
+            border-radius: 50%;
+            padding: 8px;
             transition: all 0.3s ease;
             border: 3px solid rgba(21,101,192,0.15);
+            overflow: hidden;
         }
 
         .logo-icon:hover {
@@ -298,6 +329,7 @@
         .logo-icon img {
             width: 100%;
             height: 100%;
+            object-fit: cover;
             object-fit: cover;
             display: block;
             transform: scale(1.4);
@@ -1344,6 +1376,8 @@
             .logo-icon {
                 width: 60px;
                 height: 60px;
+                border-radius: 50%;
+                overflow: hidden;
             }
 
             .logo-text h1 {
@@ -1571,7 +1605,7 @@
             align-items: center;
             justify-content: center;
             background: white;
-            border-radius: 15px;
+            border-radius: 50%;
             padding: 10px;
             transition: all 0.3s ease;
             border: 3px solid rgba(21,101,192,0.15);
@@ -1797,6 +1831,8 @@
             .logo-icon {
                 width: 70px;
                 height: 70px;
+                border-radius: 50%;
+                overflow: hidden;
                 animation: pulse-scale 2s ease-in-out infinite;
             }
 
@@ -5124,28 +5160,36 @@
 
     
 /* Slides modal (topic-specific) - injected by script */
-.slides-modal { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.75); z-index: 3100; align-items: center; justify-content: center; padding: 10px; }
+.slides-modal { display: none; position: fixed; inset: 0; background: linear-gradient(135deg, rgba(30, 60, 114, 0.9) 0%, rgba(42, 82, 152, 0.9) 100%); z-index: 3100; align-items: center; justify-content: center; padding: 10px; animation: fadeIn 0.3s ease; }
 .slides-modal.active { display: flex; }
-.slides-modal-content { width: 100%; max-width: 1200px; max-height: 95vh; background: #fff; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 30px 70px rgba(0,0,0,0.4); }
-.slides-header { display:flex; justify-content:space-between; align-items:center; padding: 12px 15px; border-bottom: 1px solid rgba(0,0,0,0.06); }
-.slides-header h3 { margin:0; font-size:14px; color:#1565c0; font-weight:700; }
-.slides-close { background: rgba(244,67,54,0.9); color: #fff; border: none; width:32px; height:32px; border-radius:6px; font-size:18px; cursor:pointer; }
-.slides-body { display: flex; gap: 10px; padding: 12px; align-items: stretch; flex: 1; overflow: hidden; }
-.slides-stage { flex: 1.3 1 0%; background: #f7fbff; border-radius: 10px; padding: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
-.slide-item { width: 100%; height: 100%; display: grid; grid-template-columns: 1fr; gap: 12px; align-items: center; justify-items: center; }
-.slide-item .slide-image { width: 100%; height: 30vh; max-height: 320px; border-radius: 10px; overflow: hidden; display:flex; align-items:center; justify-content:center; background:#e6f3ff; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.slides-modal-content { width: 100%; max-width: 1200px; max-height: 95vh; background: linear-gradient(to bottom, #ffffff 0%, #f5f9ff 100%); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 30px 100px rgba(0,0,0,0.4); animation: slideUp 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
+@keyframes slideUp { from { transform: translateY(50px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.slides-header { display:flex; justify-content:space-between; align-items:center; padding: 25px 30px; background: linear-gradient(135deg, #1565c0 0%, #0d47a1 100%); border-bottom: none; box-shadow: 0 4px 15px rgba(21, 101, 192, 0.2); position: relative; }
+.slides-header::after { content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 3px; background: linear-gradient(90deg, #00bcd4, #1565c0, #00bcd4); }
+.slides-header h3 { margin:0; font-size:24px; color:white; font-weight:700; letter-spacing: 0.5px; }
+.slides-close { background: rgba(255,255,255,0.2); color: white; border: 2px solid rgba(255,255,255,0.5); width:45px; height:45px; border-radius:50%; font-size:28px; cursor:pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center; }
+.slides-close:hover { background: rgba(255,255,255,0.35); border-color: white; transform: rotate(90deg); }
+.slides-body { display: flex; gap: 20px; padding: 30px; align-items: stretch; flex: 1; overflow: auto; background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%); }
+.slides-stage { flex: 1.3 1 0%; background: white; border-radius: 15px; padding: 25px; display: flex; align-items: center; justify-content: center; overflow: auto; box-shadow: inset 0 2px 10px rgba(0,0,0,0.03); }
+.slide-item { width: 100%; height: 100%; display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center; justify-items: center; animation: fadeInScale 0.5s ease; }
+@keyframes fadeInScale { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+.slide-item .slide-image { width: 100%; height: 30vh; max-height: 320px; border-radius: 15px; overflow: hidden; display:flex; align-items:center; justify-content:center; background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%); box-shadow: 0 8px 25px rgba(21,101,192,0.15); transition: transform 0.3s, box-shadow 0.3s; }
+.slide-item .slide-image:hover { transform: translateY(-5px); box-shadow: 0 12px 35px rgba(21,101,192,0.25); }
 .slide-item .slide-image img { width:100%; height:100%; object-fit:cover; display:block; }
-.slide-item .slide-text { width:100%; padding: 12px; overflow:auto; max-height: 25vh; }
-.slide-item .slide-text h4 { color:#1565c0; margin:0 0 8px; font-size:14px; font-weight:700; }
-.slide-item .slide-text p { color:#333; line-height:1.4; font-size:12px; }
-.slides-side { flex: 0.6 0 200px; display:none; }
-.slides-desc { margin:0; color:#444; font-size:12px; padding:6px 0; flex:0 0 auto; }
-.slides-thumbs { display:flex; gap:6px; flex-wrap:wrap; align-items:center; overflow:auto; padding-top:0; justify-content:center; }
-.slides-thumbs .thumb { width:50px; height:38px; border-radius:6px; overflow:hidden; cursor:pointer; border:2px solid transparent; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.slide-item .slide-text { width:100%; padding: 20px; overflow:auto; max-height: 25vh; background: linear-gradient(to bottom, #ffffff, #f8fbff); border-left: 4px solid #1565c0; border-radius: 10px; }
+.slide-item .slide-text h4 { color:#0d47a1; margin:0 0 12px; font-size:16px; font-weight:700; letter-spacing: 0.5px; }
+.slide-item .slide-text p { color:#333; line-height:1.6; font-size:13px; }
+.slides-side { flex: 0.6 0 200px; display:none; flex-direction: column; gap: 15px; padding: 20px; background: linear-gradient(135deg, rgba(21,101,192,0.08) 0%, rgba(0,188,212,0.08) 100%); border-radius: 15px; border: 2px solid rgba(21,101,192,0.15); }
+.slides-desc { margin:0; color:#1565c0; font-size:13px; padding:10px 0; flex:0 0 auto; font-weight: 500; border-bottom: 2px solid rgba(21,101,192,0.2); line-height: 1.6; }
+.slides-thumbs { display:flex; gap:8px; flex-wrap:wrap; align-items:center; overflow:auto; padding-top:10px; justify-content:center; }
+.slides-thumbs .thumb { width:50px; height:38px; border-radius:10px; overflow:hidden; cursor:pointer; border:3px solid transparent; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1); box-shadow: 0 2px 8px rgba(0,0,0,0.1); position: relative; }
+.slides-thumbs .thumb:hover { transform: scale(1.1); box-shadow: 0 4px 12px rgba(21,101,192,0.2); }
 .slides-thumbs .thumb img { width:100%; height:100%; object-fit:cover; display:block; }
-.slides-thumbs .thumb.active { border-color:#1565c0; box-shadow:0 3px 10px rgba(21,101,192,0.15); }
-.slides-controls { display:flex; gap:10px; align-items:center; justify-content:center; padding: 10px 12px; border-top:1px solid rgba(0,0,0,0.06); }
-.slides-indicator { font-weight:700; color:#1565c0; font-size:11px; }
+.slides-thumbs .thumb.active { border-color:#1565c0; box-shadow: 0 5px 20px rgba(21,101,192,0.35); transform: scale(1.15); }
+.slides-thumbs .thumb.active::after { content: '✓'; position: absolute; top: 2px; right: 2px; background: #1565c0; color: white; width: 20px; height: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; }
+.slides-controls { display:flex; gap:15px; align-items:center; justify-content:space-between; padding: 25px 30px; border-top:3px solid rgba(21,101,192,0.1); background: linear-gradient(to right, rgba(21,101,192,0.02), rgba(0,188,212,0.02)); }
+.slides-indicator { font-weight:700; color:#1565c0; font-size:14px; background: linear-gradient(135deg, #e3f2fd, #b3e5fc); padding: 8px 16px; border-radius: 20px; min-width: 70px; text-align: center; box-shadow: 0 2px 8px rgba(21,101,192,0.1); }
 @media (min-width: 480px) { .slides-header h3 { font-size:15px; } .slide-item .slide-image { height:35vh; max-height: 380px; } .slide-item .slide-text { max-height: 28vh; } .slides-thumbs .thumb { width:55px; height:42px; } }
 @media (min-width: 768px) { .slide-item { grid-template-columns: 1fr 1fr; gap: 15px; } .slide-item .slide-image { height: 40vh; max-height:450px; } .slides-side { display:flex; } .slides-thumbs { justify-content:flex-start; } }
 @media (min-width: 1024px) { .slides-modal-content { max-height: 90vh; } .slide-item { gap: 18px; } .slides-header h3 { font-size:20px; } .slide-item .slide-image { height: 60vh; max-height: 640px; } .slide-item .slide-text h4 { font-size:22px; margin-bottom:10px; } .slide-item .slide-text p { font-size:16px; line-height:1.6; } .slides-thumbs .thumb { width:72px; height:54px; } }
@@ -5647,6 +5691,18 @@
     }
 }
 
+/* OG Preview Image - Hidden SVG for circular mask */
+.og-preview-image {
+    display: none;
+    width: 1200px;
+    height: 1200px;
+}
+
+.og-preview-image svg {
+    width: 100%;
+    height: 100%;
+}
+
 </style>
 </head>
 <body>
@@ -5709,7 +5765,7 @@
                 </div>
                 <h2>Jelajahi Dunia</h2>
                 <h3>Maritim Bersama BMKG</h3>
-                <p>Selamat datang di Maritim Cerdas! Pelajari fenomena cuaca, laut, dan atmosfer melalui video edukasi interaktif yang dikurasi oleh ahli dari Stasiun Meteorologi Merak - BMKG.</p>
+                <p>Selamat datang di Maritim Cerdas. Tempat belajar seru tentang cuaca dan laut. Semua materi di sini terpercaya dan dicek langsung oleh Stasiun Meteorologi Merak - BMKG..</p>
                 <div class="hero-buttons">
                     <button class="btn-primary" onclick="scrollToSection('edukasi')">Mulai Belajar</button>
                     <button class="btn-secondary" onclick="scrollToSection('tentang')">Tentang Kami</button>
@@ -6639,7 +6695,7 @@ const videos = {
     tsunami: {
         title: '🌧️ Proses Terjadinya Hujan',
         description: 'Hujan adalah peristiwa turunnya butiran air dari awan ke permukaan bumi akibat proses pendinginan uap air. Proses ini merupakan bagian dari siklus hidrologi yang berlangsung terus-menerus, dimulai dari penguapan air di permukaan bumi hingga kembali lagi sebagai hujan.',
-        video:'https://www.youtube.com/embed/4aYOusTvLVo'
+        video:'https://www.youtube.com/embed/ovBgLypMtHM'
     }
 };
 
@@ -7282,8 +7338,36 @@ function getBotResponse(userMessage) {
     return knowledgeBase.default.response;
 }
 
-
 </script>
+    
+    <!-- Hidden SVG for circular preview image on social media -->
+    <svg class="og-preview-image" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <style>
+                .preview-bg { fill: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); }
+                .preview-circle { fill: white; }
+                .preview-image { clip-path: url(#circleMask); }
+            </style>
+            <clipPath id="circleMask">
+                <circle cx="600" cy="600" r="550" />
+            </clipPath>
+        </defs>
+        <!-- Background gradient -->
+        <rect width="1200" height="1200" fill="url(#gradient)" />
+        <defs>
+            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+                <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+            </linearGradient>
+        </defs>
+        <!-- Circular frame -->
+        <circle cx="600" cy="600" r="550" fill="white" />
+        <!-- Inner image area with BMKG logo -->
+        <image class="preview-image" href="BMKG.png" x="50" y="50" width="1100" height="1100" />
+        <!-- Border circle -->
+        <circle cx="600" cy="600" r="550" fill="none" stroke="#1565c0" stroke-width="8" />
+    </svg>
+    
     <script src="script.js"></script>
 </body>
 </html>
