@@ -315,11 +315,10 @@
             align-items: center;
             justify-content: center;
             background: white;
-            border-radius: 50%;
+            border-radius: 15px;
             padding: 8px;
             transition: all 0.3s ease;
             border: 3px solid rgba(21,101,192,0.15);
-            overflow: hidden;
         }
 
         .logo-icon:hover {
@@ -1376,8 +1375,7 @@
             .logo-icon {
                 width: 60px;
                 height: 60px;
-                border-radius: 50%;
-                overflow: hidden;
+                border-radius: 15px;
             }
 
             .logo-text h1 {
@@ -1524,6 +1522,303 @@
                 border-right: 8px solid transparent;
                 border-top: 8px solid white;
             }
+
+            /* Stats Section Mobile */
+            .stats-section {
+                padding: 30px 15px !important;
+            }
+
+            .stats-container {
+                grid-template-columns: 1fr 1fr !important;
+                gap: 15px !important;
+            }
+
+            .stat-item {
+                padding: 15px !important;
+            }
+
+            .stat-num {
+                font-size: 28px !important;
+            }
+
+            .stat-label {
+                font-size: 12px !important;
+            }
+
+            /* Videos Section Mobile */
+            .videos-section {
+                padding: 30px 15px !important;
+            }
+
+            .videos-container {
+                grid-template-columns: 1fr !important;
+                gap: 15px !important;
+            }
+
+            .video-card {
+                border-radius: 12px !important;
+            }
+
+            .video-thumbnail {
+                height: 160px !important;
+            }
+
+            .video-info {
+                padding: 12px !important;
+            }
+
+            .video-info h3 {
+                font-size: 13px !important;
+                margin-bottom: 6px !important;
+            }
+
+            .video-info p {
+                font-size: 11px !important;
+                margin-bottom: 8px !important;
+            }
+
+            .play-button {
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 20px !important;
+            }
+
+            /* Features Section Mobile */
+            .features-section {
+                padding: 30px 15px !important;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+
+            .feature-card {
+                padding: 15px !important;
+                border-radius: 12px !important;
+            }
+
+            .feature-icon {
+                width: 45px !important;
+                height: 45px !important;
+                font-size: 20px !important;
+                margin-bottom: 8px !important;
+            }
+
+            .feature-card h4 {
+                font-size: 13px !important;
+                margin-bottom: 5px !important;
+            }
+
+            .feature-card p {
+                font-size: 11px !important;
+                line-height: 1.4 !important;
+            }
+
+            /* Why Section Mobile */
+            .why-section {
+                padding: 30px 15px !important;
+            }
+
+            .why-container {
+                grid-template-columns: 1fr !important;
+                gap: 15px !important;
+            }
+
+            .why-item {
+                padding: 15px !important;
+            }
+
+            .why-item h4 {
+                font-size: 14px !important;
+            }
+
+            .why-item p {
+                font-size: 12px !important;
+            }
+
+            /* Cera Section Mobile */
+            .cera-section {
+                padding: 30px 15px !important;
+            }
+
+            .cera-container-main {
+                gap: 20px !important;
+            }
+
+            .cera-intro h2 {
+                font-size: 22px !important;
+                margin-bottom: 15px !important;
+            }
+
+            .cera-intro p {
+                font-size: 13px !important;
+                line-height: 1.6 !important;
+            }
+
+            .cera-character {
+                width: 100% !important;
+                max-width: 250px !important;
+                height: auto !important;
+            }
+
+            /* Chat Window Mobile */
+            .chat-window {
+                position: fixed !important;
+                width: 95vw !important;
+                max-width: 95vw !important;
+                height: 70vh !important;
+                bottom: 80px !important;
+                left: 50% !important;
+                right: auto !important;
+                transform: translateX(-50%) !important;
+                border-radius: 20px !important;
+            }
+
+            .chatbot-container {
+                bottom: 15px !important;
+                right: 50% !important;
+                left: 50% !important;
+                transform: translateX(-50%) !important;
+            }
+
+            /* Slides Modal Mobile */
+            .slides-modal-content {
+                width: 95% !important;
+                max-width: 95% !important;
+                height: 90vh !important;
+                border-radius: 15px !important;
+            }
+
+            .slides-body {
+                flex-direction: column !important;
+                padding: 15px !important;
+                gap: 10px !important;
+            }
+
+            .slides-stage {
+                flex: 1 1 auto !important;
+                padding: 15px !important;
+            }
+
+            .slide-item {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
+            }
+
+            .slide-item .slide-image {
+                height: 180px !important;
+                max-height: 180px !important;
+            }
+
+            .slide-item .slide-text {
+                max-height: 150px !important;
+                font-size: 12px !important;
+            }
+
+            .slides-side {
+                display: none !important;
+            }
+
+            .slides-header h3 {
+                font-size: 14px !important;
+            }
+
+            /* Flipbook Modal Mobile */
+            .flipbook-modal-content {
+                width: 95% !important;
+                height: 90vh !important;
+                border-radius: 15px !important;
+            }
+
+            .flipbook-card {
+                flex-direction: column !important;
+            }
+
+            .flipbook-thumbnail {
+                width: 100% !important;
+                height: 250px !important;
+            }
+
+            .flipbook-info h3 {
+                font-size: 20px !important;
+            }
+
+            .flipbook-features {
+                grid-template-columns: 1fr !important;
+                gap: 10px !important;
+            }
+
+            /* Quiz Mobile */
+            .quiz-container {
+                padding: 15px !important;
+            }
+
+            .quiz-header h2 {
+                font-size: 18px !important;
+            }
+
+            .question-card {
+                padding: 15px !important;
+            }
+
+            .question-text {
+                font-size: 13px !important;
+            }
+
+            .answer-option {
+                padding: 10px !important;
+            }
+
+            .option-text {
+                font-size: 12px !important;
+            }
+
+            /* Progress Bar Mobile */
+            .progress-bar-container {
+                height: 6px !important;
+            }
+
+            /* Footer Mobile */
+            .footer {
+                padding: 30px 15px !important;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            .footer-logo {
+                display: flex !important;
+                justify-content: center !important;
+                margin-bottom: 15px !important;
+            }
+
+            .footer-section {
+                text-align: center !important;
+            }
+
+            .footer-section h4 {
+                font-size: 14px !important;
+            }
+
+            .footer-links li {
+                font-size: 12px !important;
+            }
+
+            .contact-item {
+                justify-content: center !important;
+            }
+
+            .footer-bottom {
+                padding-top: 20px !important;
+                text-align: center !important;
+            }
+
+            .footer-bottom p {
+                font-size: 12px !important;
+            }
         }
         .notification-toast {
             position: fixed;
@@ -1605,7 +1900,7 @@
             align-items: center;
             justify-content: center;
             background: white;
-            border-radius: 50%;
+            border-radius: 15px;
             padding: 10px;
             transition: all 0.3s ease;
             border: 3px solid rgba(21,101,192,0.15);
@@ -1831,8 +2126,7 @@
             .logo-icon {
                 width: 70px;
                 height: 70px;
-                border-radius: 50%;
-                overflow: hidden;
+                border-radius: 15px;
                 animation: pulse-scale 2s ease-in-out infinite;
             }
 
@@ -6676,7 +6970,7 @@ function showTopic(topicKey) {
 const videos = {
     gelombang: {
         title: '🌊 Gelombang Laut',
-        description: 'Video ini menjelaskan fenomena gelombang laut secara komprehensif. Anda akan mempelajari bagaimana gelombang terbentuk akibat angin, perbedaan antara gelombang permukaan dan gelombang dalam, serta bagaimana gelombang mempengaruhi navigasi maritim dan ekosistem pesisir.',
+        description: 'menjelaskan proses terjadinya gelombang laut, yang umumnya disebabkan oleh tiupan angin di atas permukaan laut. Pembentukan gelombang diawali dari hembusan angin yang memindahkan energi ke permukaan air, sehingga terbentuk gerakan naik dan turunnya air laut, Besar kecilnya gelombang juga dipengaruhi oleh kecepatan angin, lama angin bertiup, dan luas area laut yang dilalui angin.',
         // Ganti link di bawah ini:
         video: 'https://www.youtube.com/embed/C81I5TX3j_s' 
     },
@@ -6694,7 +6988,7 @@ const videos = {
     },
     tsunami: {
         title: '🌧️ Proses Terjadinya Hujan',
-        description: 'Hujan adalah peristiwa turunnya butiran air dari awan ke permukaan bumi akibat proses pendinginan uap air. Proses ini merupakan bagian dari siklus hidrologi yang berlangsung terus-menerus, dimulai dari penguapan air di permukaan bumi hingga kembali lagi sebagai hujan.',
+        description: 'Di dalamnya menjelaskan bagaimana siklus terjadinya hujan biasa dan hujan es, dimana pada pembentukan hujan biasa dan hujan es ini tidak jauh berbeda, diawali dari penguapan air, pembentukan awan, hingga terjadinya presipitasi. Perbedaannya terletak pada kondisi suhu di dalam awan, di mana hujan es terbentuk ketika butiran air terbawa ke lapisan udara yang sangat dingin sehingga membeku menjadi es sebelum jatuh ke permukaan bumi.',
         video:'https://www.youtube.com/embed/ovBgLypMtHM'
     }
 };
